@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="zapisdsi.css">
+    <title>Document</title>
+    
+</head>
+<body>
+
+    <header>
+		<div class="containerrr">
+		  <div class="header__inner">
+			<div class="header_logo"><a href="zapis.html"><ion-icon name="enter-outline"></ion-icon>Appointment</a></div>
+			<nav class="navbar">
+                <div class="header_logo"><a href="home.html">Return<ion-icon name="return-up-back-outline"></ion-icon></a></div>
+                
+			</nav>
+		  </div>	
+		</div>
+		
+		</header>
+
+        <div class="cover">
+        <form id="form" onsubmit="onSubmit(event)" action="#">
+
+            <div class="input-control">
+                <label for="firstname">Firstname</label>
+                <input id="firstname" name="firstname" type="name" required>
+                <div class="error"></div>
+            </div>
+
+
+            <div class="input-control">
+                <label for="lastname">Lastname</label>
+                <input id="lastname" name="lastname" type="name">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email">
+                <div class="error"></div>
+            </div><br>
+
+   
+                <label for="state">State:</label>
+                    <select name="state" id="stat" >
+                        <option value="">Select State</option>
+                        <option value="Almaty">Almaty</option>
+                        <option value="Smey">Smey</option>
+                        <option value="Kyzylorda">Kyzylorda</option>
+                    </select><br><br>
+
+                    <label for="masters">Masters:</label>
+                        <input value="Yara" type="radio" name="master">
+                        <label for="">Yara  </label>
+                        <input value="Harald" type="radio"name="master">
+                        <label for="">Harald</label>
+                        <input value="Iara" type="radio"name="master">
+                        <label  for="">Iara  </label>
+                        <input value="Hans" type="radio"name="master">
+                        <label  for="">Hans</label>
+                        <input value="Vera" type="radio"name="master" >
+                        <label for="">Vera  </label>
+                        <input value="Silvan" type="radio"name="master">
+                        <label for="">Silvan</label><br><br>
+
+
+                        <label for="birthdaytime">Take a time:</label>
+                        <input type="datetime-local" id="data" name="data">   <br><br>
+            
+            <button type="submit" class="sumbit">Save</button>      
+            <button type="submit"  onclick="checkOut()">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+
+</body>
+<script src="jszapis.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>

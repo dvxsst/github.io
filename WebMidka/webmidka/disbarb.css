@@ -1,0 +1,349 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	font-family: 'Raleway', sans-serif; 
+    background-color: #151414;
+	text-align: center;
+}
+:root{
+	--bg-color: #151414;
+	--text-color: rgb(129, 127, 127);
+	--second-color: #ccc;
+	--main-color: #fffcfb;
+	--p-font: 1.1rem;
+}
+::-webkit-scrollbar{
+    width: 0px;
+  }
+.containerrr{
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+header{
+	position:relative;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	left: 0;
+	top: 0;
+	z-index: 1000;
+	padding: 15px 10%;
+}
+.header__inner{
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0;
+	border-bottom: 1px solid #918f8f;
+}
+
+.header_logo{
+	display: flex;
+	align-items: center;
+	color: var(--text-color);
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.header_logo ion-icon{
+	color: var(--main-color);
+	font-size: 40px;
+	margin-right: 5px;
+}
+
+.navbar{
+	display: flex;
+}
+
+.navbar a{
+	color: var(--text-color);
+	font-size: var(--p-font);
+	font-weight: 500;
+	margin: 0 30px;
+	transition: all .55s ease;
+
+}
+
+.navbar a:hover{
+	color: var(--main-color);
+}
+
+.navbar a.active{
+	color: var(--main-color);
+
+}
+#menu-icon{
+	font-size: 25px;
+	color: var(--bg-color);
+	z-index: 10001;
+	cursor: pointer;
+}
+
+
+
+@media(max-width: 890px){
+	header{
+		position: fixed;
+		padding: 12px 2.5%;
+		transition: .1s;
+		background:var(--bg-color);
+		z-index: 20;
+		border-bottom: 1px solid #918f8f;
+	}
+	.header__inner{
+		border-bottom: none;
+	}
+	#menu-icon{
+		color: var(--text-color);
+	}
+}
+
+
+@media(max-width: 890px){
+	.navbar{
+		position: absolute;
+		top: 100%;
+		right: -200%;
+		width: 200px;
+		height: 28vh;
+		background: var(--main-color);
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: flex-start;
+		padding: 20px;
+		border-radius: 4px;
+		transition: all .55s ease;
+	}
+	.navbar a{
+		display: flex;
+		margin: 4px 0;
+		transition: all .45s ease;
+		background-color: #fffcfb;
+	}
+	.navbar a:hover{
+		transform: translateY(5px);
+		color: var(--text-color);
+	}
+	.navbar a.active{
+		color: var(--text-color);
+	}
+	.navbar.open{
+		right: 2%;
+	}
+}
+
+@media(max-width: 650px){
+  .navbar{
+    height: 31vh;
+  }
+}
+
+
+
+
+
+
+.container,.container2 {
+
+    max-height: 800px;
+    max-width: 1280px;
+    min-height: 700px;
+    min-width: 600px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .border {
+    height: 369px;
+    width: 290px;
+    margin-left: 5px;
+    background: transparent;
+    border-radius: 10px;
+    transition: border 1s;
+    position: relative;
+  }
+  .border:hover {
+    border: 1px solid #fff;
+  }
+  .card {
+    height: 379px;
+    width: 300px;
+    background: #808080;
+    border-radius: 10px;
+    transition: 0.8s;
+    overflow:auto;
+    background: #000;
+    box-shadow: 0 70px 63px -60px #000;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .card0 {
+    background: url("Barbers_img/XXL.webp") center center no-repeat;
+    background-size: 300px;
+  }
+  .card0:hover {
+    background: url("Barbers_img/XXL.webp") left center no-repeat;
+    background-size: 600px;
+  }
+  .card0:hover h2 {
+    opacity: 1;
+  }
+  .card0:hover .fa {
+    opacity: 1;
+  }
+  .card1 {
+    background: url("Barbers_img/huan.jpg") center center no-repeat;
+    background-size: 300px;
+  }
+  .card1:hover {
+    background: url("Barbers_img/huan.jpg") left center no-repeat;
+    background-size: 600px;
+  }
+  .card1:hover h2 {
+    opacity: 1;
+  }
+  .card1:hover .fa {
+    opacity: 1;
+  }
+  .card2 {
+    background: url("Barbers_img/luna.jpg") center center no-repeat;
+    background-size: 300px;
+  }
+  .card2:hover {
+    background: url("Barbers_img/luna.jpg") left center no-repeat;
+    background-size: 600px;
+  }
+  .card2:hover h2 {
+    opacity: 1;
+  }
+  .card2:hover .fa {
+    opacity: 1;
+  }
+
+  .card3 {
+    background: url("Barbers_img/mega.jpg") center center no-repeat;
+    background-size: 300px;
+  }
+  .card3:hover {
+    background: url("Barbers_img/mega.jpg") left center no-repeat;
+    background-size: 600px;
+  }
+  .card3:hover h2 {
+    opacity: 1;
+  }
+  .card3:hover .fa {
+    opacity: 1;
+  }
+  .card4 {
+    background: url("Barbers_img/sara.jpg") center center no-repeat;
+    background-size: 300px;
+  }
+  .card4:hover {
+    background: url("Barbers_img/sara.jpg") left center no-repeat;
+    background-size: 600px;
+  }
+  .card4:hover h2 {
+    opacity: 1;
+  }
+  .card4:hover .fa {
+    opacity: 1;
+  }
+  .card5 {
+    background: url("Barbers_img/andrei.jpg") center center no-repeat;
+    background-size: 300px;
+  }
+  .card5:hover {
+    background: url("Barbers_img/andrei.jpg") left center no-repeat;
+    background-size: 600px;
+  }
+  .card5:hover h2 {
+    opacity: 1;
+  }
+  .card5:hover .fa {
+    opacity: 1;
+  }
+  h2 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    margin: 20px;
+    opacity: 0;
+    transition: opacity 1s;
+    background-color: transparent;
+  }
+  .fa {
+    opacity: 0;
+    transition: opacity 1s;
+    background-color: transparent;
+  }
+  .icons {
+    position: absolute;
+    fill: #fff;
+    color: rgb(0, 0, 0);
+    height: 130px;
+    top: 226px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    justify-content: space-around;
+    background-color: transparent;
+  }
+
+  @media(max-width: 890px){
+    .container,.container2 {
+      position: relative;
+      flex-direction: column;
+      justify-content: center;
+      max-height: none;
+      max-width: none;
+      min-height: none;
+      min-width: none;
+    }
+    .container{
+      margin-top: 70px;
+    }
+    .card {
+      justify-content: center;
+      margin: 20px;
+      top: 20px;
+      transition: calc(50% 50%);
+    }
+
+
+    button {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+
+    }
+  }
+
+
+  @media(max-width: 600px){
+    .container,.container2 {
+      position: relative;
+      flex-direction: column;
+      justify-content: center;
+      right: 50%;
+      max-height: none;
+      max-width: none;
+      min-height: none;
+      min-width: none;
+    }
+    .container{
+      margin-top: 90px;
+    }
+    .card {
+      justify-content: center;
+      margin: 20px;
+      top: 20px;
+    }
+  }

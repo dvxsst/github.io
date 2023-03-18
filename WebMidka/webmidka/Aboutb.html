@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="about_style.css">
+	<link rel="stylesheet"
+  	href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  	<!-- or -->
+  	<link rel="stylesheet"
+  	href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	<title>Document</title>
+</head>
+<body>
+	
+	<header>
+		<a href="#" class="logo"><i class='bx bxs-briefcase-alt-2'></i>Service</a>
+
+		<ul class="navbar">
+			<li><a href="home.html" class="active">Home</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="Shop.html">Shop</a></li>
+			<li><a href="barbers.html">Barber</a></li>
+			<li><a href="history.html">History</a></li>
+			<li><a href="Contact.html">Contacts</a></li>
+		</ul>
+
+		<div class="header-icons">
+			<div class="bx bx-menu" id="menu-icon"></div>	
+		</div>
+	</header>
+
+
+	<section class="service" id="services">
+		<div class="heading">
+			<span>Services</span>
+			<h2>My Awesome Services</h2>
+		</div>
+
+		<div class="service-container">
+
+			<div class="row">
+				<i class='bx bx-cut'></i>
+				<h3>Male Haircuts</h3>
+				<p>It is not surprising that a haircut is the most requested service in barbershops. If you like the contrast between shaved a correction should be done every 2-3 weeks.</p>
+			</div>
+
+			<div class="row">
+				<i class='bx bx-task'></i>
+				<h3>Mustache Correction</h3>
+				<p>Growing a beard and mustache is half the battle, but keeping them neat and well-groomed is a more difficult task.</p>
+			</div>
+
+			<div class="row">
+				<i class='bx bxs-spreadsheet'></i>
+				<h3>Kids Haircut</h3>
+				<p>It's never too early to develop a sense of style. And although barbershops are positioned, most of them are happy to work with young gentlemen and kids.</p>
+			</div>
+
+			<div class="row">
+				<i class='bx bxs-color'></i>
+				<h3>Shaving With Warning</h3>
+				<p>As a rule, the service includes hair washing, drying and styling using styling. All this takes plus or minus 15 minutes.</p>
+			</div>
+
+			<div class="row">
+				<i class='bx bx-closet'></i>
+				<h3>Installation</h3>
+				<p>I throw myself down among the tall grass by the stream as I lie close to the earth</p>
+			</div>
+
+			<div class="row">
+				<i class='bx bxs-group'></i>
+				<h3>Regular Сustomers</h3>
+				<p>We have special gifts and discounts for them.</p>
+			</div>
+
+		</div>
+	</section>
+
+
+	<script type="text/javascript">
+		function slider(anything){
+			document.querySelector('.one').src = anything;
+		};
+
+
+		let menu = document.querySelector('#menu-icon');
+		let navbar = document.querySelector('.navbar');
+
+		menu.onclick = () => {
+			menu.classList.toggle('bx-x');
+			navbar.classList.toggle('open')
+		}
+	</script>
+
+</body>
+</html>
